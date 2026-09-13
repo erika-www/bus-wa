@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+      135deg,
+      #020718 0%,
+      #061535 40%,
+      #0b2a5c 70%,
+      #123f7a 100%
+  );
+}
+
+header{
+  background: linear-gradient(
+        90deg,
+        #010513 0%,
+        #031027 50%,
+        #0a2850 100%
+    );
+}
+.logo-icon{
+  width: 3%;
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: 0;
+  padding-bottom: 0;
+  align-items: center;
+
+}
+
+.logo{
+  width: 10%;
+  display: inline-block;
+}
+
+.dito{
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 0;
+  font-weight: bold;
+  color: white;
+}
+
+.logo p{
+  font-size: 10px;
+  color: white;
+  margin-top: 0;
+}
+
+.tabs{
+  width: 70%;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.tabs a{
+  text-decoration: none;
+  font-size: 32px;
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  font-weight: 600;
+  color: lightblue;
+}
+
+.tabs a.active{
+  background-color: rgba(38, 36, 143, 0.608);
+  width: auto;
+  border-radius: 10px;
+
+}
+
