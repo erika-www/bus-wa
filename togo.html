@@ -1,26 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="togo.css">
+    <script src="togo.js" defer></script>
     <title>DITO NA PO!</title>
 </head>
 
 <body>
-    <header>
+    <header>    
         <div class="logo-icon">
-            DDD
+            <img src="bus-icon.png" alt="bus image" width="50" height="50">
         </div>
         <div class="logo">
             <a href="landing.html" class="dito">DITO NA PO</a>
+            <p>Navigation Web Application</p>
         </div>
 
         <div class="tabs">
             <a href="landing.html">Home</a>
             <a href="togo.html" class="active">Where to Go?</a>
-            <a href="about.html">About QC Bus</a>     
-        </div>      
+            <a href="about.html">About QC Bus</a>
+        </div>
+
+        <button class="header-button">
+            Login/ Sign Up
+        </button>
         <hr>
     </header>
+
+    <div class="info">
+        <h1>Doesn't Know Where To Go? We got You!</h1>
+        <p>Travel around the famous spots in the city with the QC Bus. Select the destination of you choice and know how to get there.
+            <br> Still indecisive? Click the randomizer!</p>
+        <div class="btn-wrapper">
+        <button class="btn">
+            <svg class="btn-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"
+            ></path>
+            </svg>
+
+            <div class="txt-wrapper">
+            <div class="txt-1">
+                <span class="btn-letter">G</span>
+                <span class="btn-letter">e</span>
+                <span class="btn-letter">n</span>
+                <span class="btn-letter">e</span>
+                <span class="btn-letter">r</span>
+                <span class="btn-letter">a</span>
+                <span class="btn-letter">t</span>
+                <span class="btn-letter">e</span>
+            </div>
+            <div class="txt-2">
+                <span class="btn-letter">G</span>
+                <span class="btn-letter">e</span>
+                <span class="btn-letter">n</span>
+                <span class="btn-letter">e</span>
+                <span class="btn-letter">r</span>
+                <span class="btn-letter">a</span>
+                <span class="btn-letter">t</span>
+                <span class="btn-letter">i</span>
+                <span class="btn-letter">n</span>
+                <span class="btn-letter">g</span>
+            </div>
+            </div>
+        </button>
+        </div>
+    </div>
+
+    <div class="selection">
+        <div class="con1">
+            <input class="input" 
+                placeholder="Search tourism spots, destinations, or whatever suits your flavor...">
+            <div class="dropdown">
+                <button onclick="toggledropdown()" class="dropbtn" id="button1">
+                    <strong>All Routes</strong>
+                </button>
+                <div id="mydd" class="dropdown-content">
+                    <a href="#">Route 1: QC Hall &rarr; Cubao</a>
+                    <a href="#">Route 2: QC Hall &rarr; Litex</a>
+                    <a href="#">Route 3: QC Hall &rarr; Litex</a>
+                    <a href="#">Route 4: QC Hall &rarr; General Luis</a>
+                    <a href="#">Route 5: QC Hall &rarr; Mindanao Avenue</a>
+                    <a href="#">Route 6: QC Hall &rarr; Gilmore</a>
+                    <a href="#">Route 7: QC Hall &rarr; Ortigas/IBP Road</a>
+                    <a href="#">Route 8: QC Hall &rarr; Munoz</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
