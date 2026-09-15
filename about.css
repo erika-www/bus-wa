@@ -77,3 +77,357 @@ header{
   border-radius: 10px;
 
 }
+
+.text{
+  color: whitesmoke;
+}
+
+.text h4{
+  font-weight: normal;
+}
+
+.deets{
+  color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 10px;
+    background: #020817;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+
+/* =========================
+   MAIN CARD
+========================= */
+
+.route-card {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    background: #101a2f;
+    border: 1px solid #24334e;
+    border-radius: 22px;
+    overflow: hidden;
+    transition: 0.3s ease;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.route-header {
+    width: 100%;
+
+    min-height: 128px;
+
+    padding: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: none;
+    background: transparent;
+
+    color: white;
+
+    cursor: pointer;
+
+    text-align: left;
+}
+
+
+/* LEFT SIDE */
+
+.route-left {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    min-width: 0;
+}
+
+
+/* LINE 1 BADGE */
+
+.line-badge {
+    flex-shrink: 0;
+
+    padding: 13px 20px;
+
+    background: #078bc9;
+
+    border-radius: 13px;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* TITLE */
+
+.route-title h2 {
+    margin: 0 0 8px;
+
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.route-title p {
+    margin: 0;
+
+    font-size: 18px;
+
+    color: #8da8ce;
+}
+
+
+/* RIGHT SIDE */
+
+.route-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    flex-shrink: 0;
+}
+
+
+/* TIME */
+
+.time {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    gap: 5px;
+}
+
+.time span {
+    color: #8da0c0;
+    font-size: 16px;
+}
+
+.time strong {
+    font-size: 18px;
+}
+
+
+/* =========================
+   CHEVRON
+========================= */
+
+.chevron {
+    width: 13px;
+    height: 13px;
+
+    border-right: 3px solid #8da2c2;
+    border-bottom: 3px solid #8da2c2;
+
+    transform: rotate(45deg);
+
+    transition: transform 0.3s ease;
+}
+
+
+/* When dropdown is open */
+
+.route-card.open .chevron {
+    transform: rotate(225deg);
+}
+
+
+/* =========================
+   DETAILS
+========================= */
+
+.route-details {
+    max-height: 0;
+    overflow: hidden;
+
+    opacity: 0;
+
+    border-top: 1px solid transparent;
+
+    padding: 0 32px;
+
+    transition:
+        max-height 0.45s ease,
+        opacity 0.3s ease,
+        padding 0.45s ease,
+        border-color 0.3s ease;
+}
+
+
+/* OPEN STATE */
+
+.route-card.open .route-details {
+    max-height: 1000px;
+
+    opacity: 1;
+
+    padding: 25px 32px 32px;
+
+    border-top: 1px solid #24334e;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.description {
+    margin: 0 0 27px;
+
+    color: #91acd2;
+
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   INFORMATION BOXES
+========================= */
+
+.info-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 28px;
+}
+
+.info-box {
+    min-height: 88px;
+
+    padding: 20px 18px;
+
+    background: #1d2a40;
+
+    border-radius: 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 5px;
+}
+
+.info-box span {
+    color: #8fa9ce;
+
+    font-size: 17px;
+}
+
+.info-box strong {
+    font-size: 18px;
+}
+
+.info-box .free {
+    color: #00d98b;
+}
+
+
+/* =========================
+   STOP TITLE
+========================= */
+
+.route-details h3 {
+    margin: 0 0 14px;
+
+    font-size: 18px;
+
+    color: #c6d8f5;
+}
+
+
+/* =========================
+   STOPS GRID
+========================= */
+
+.stops-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+@media (max-width: 900px) {
+    .stops-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .stops-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* STOP CARD */
+
+.stop {
+    min-height: 76px;
+
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    border: 1px solid #24334e;
+
+    border-radius: 18px;
+
+    background: transparent;
+}
+
+
+/* NUMBER CIRCLE */
+
+.number {
+    width: 32px;
+    height: 32px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #102c72;
+
+    color: #42a7ff;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.stop strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.stop span {
+    display: block;
+    color: #88a4cb;
+    font-size: 13px;
+}

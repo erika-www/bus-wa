@@ -1,26 +1,1095 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="about.css">
+    <script src="about.js" defer></script>
     <title>DITO NA PO!</title>
 </head>
 
 <body>
-    <header>
+    <header>    
         <div class="logo-icon">
-            DDD
+            <img src="bus-icon.png" alt="bus image" width="50" height="50">
         </div>
         <div class="logo">
             <a href="landing.html" class="dito">DITO NA PO</a>
+            <p>Navigation Web Application</p>
         </div>
 
         <div class="tabs">
             <a href="landing.html">Home</a>
             <a href="togo.html">Where to Go?</a>
-            <a href="about.html"  class="active">About QC Bus</a>     
-        </div>      
+            <a href="about.html" class="active">About QC Bus</a>
+        </div>
+
+        <button class="header-button">
+            Login/ Sign Up
+        </button>
         <hr>
     </header>
+
+    <div class="text">
+        <h1><strong>The Quezon City Bus Program</strong></h1>
+        <h4>Pioneered by the Quezon City Local Government Unit under Mayor Joy Belmonte, 
+            the QCity Bus Program provides reliable, zero-fare, and climate-conscious 
+            public transportation connecting residents, students, and workers to key institutional, 
+            health, and economic zones.</h4>
+    </div>
+
+    <div class="deets">
+        <h3><strong>Official Route Details</strong></h3>
+        <h5>Click any route below to inspect its operational timetable, 
+            dispatch intervals, and full list of stops.</h1>
+    </div>
+
+    <div class="route-card" id="routeCard">
+    <button class="route-header" onclick="toggleRoute()">
+        <div class="route-left">
+            <div class="line-badge">
+                Line 1
+            </div>
+
+            <div class="route-title">
+                <h2>Route 1: QC Hall to Robinsons Novaliches</h2>
+                <p>Quezon City Hall (Kalayaán) ⇄ Robinsons Novaliches</p>
+            </div>
+
+        </div>
+
+        <div class="route-right">
+            <div class="time">
+                <span>First & Last:</span>
+                <strong>05:30 AM – 09:00 PM</strong>
+            </div>
+
+            <div class="chevron"></div>
+        </div>
+
+    </button>
+
+    <div class="route-details">
+        <p class="description">
+            Traverses Commonwealth Avenue, Fairview Center Mall,
+            SM Fairview, and Quirino Highway into Novaliches.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-box">
+                <span>Headway</span>
+                <strong>Every 12 mins</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Operating Days</span>
+                <strong>Monday to Sunday</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Total Stops</span>
+                <strong>9 Designated Stops</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Fare</span>
+                <strong class="free">Free (Libreng Sakay)</strong>
+            </div>
+
+        </div>
+
+        <h3>Designated Passenger Stops on this Line:</h3>
+        <div class="stops-grid">
+            <div class="stop">
+                <div class="number">1</div>
+                <div>
+                    <strong>QC Hall Gate 3</strong>
+                    <span>Quezon Memorial Circle</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">2</div>
+                <div>
+                    <strong>Philcoa Overpass</strong>
+                    <span>Philcoa Market / UP Entrance</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">3</div>
+                <div>
+                    <strong>University Avenue Footbridge</strong>
+                    <span>UP Diliman Arch</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">4</div>
+                <div>
+                    <strong>Tandang Sora Commonwealth</strong>
+                    <span>Tandang Sora Flyover</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">5</div>
+                <div>
+                    <strong>Don Antonio Sports Complex</strong>
+                    <span>Holy Spirit Drive</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">6</div>
+                <div>
+                    <strong>Batasan San Mateo Rd</strong>
+                    <span>Sandiganbayan</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">7</div>
+                <div>
+                    <strong>Fairview Center Mall (FCM)</strong>
+                    <span>Regalado Avenue</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">8</div>
+                <div>
+                    <strong>SM City Fairview & Fairview Terraces</strong>
+                    <span>Belfast Ave / Quirino Hwy</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">9</div>
+                <div>
+                    <strong>Robinsons Novaliches Terminal</strong>
+                    <span>Novaliches Bayan Gateway</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="route-card" id="routeCard">
+    <button class="route-header" onclick="toggleRoute()">
+        <div class="route-left">
+            <div class="line-badge">
+                Line 2
+            </div>
+
+            <div class="route-title">
+                <h2>Route 1: QC Hall to Robinsons Novaliches</h2>
+                <p>Quezon City Hall (Kalayaán) ⇄ Robinsons Novaliches</p>
+            </div>
+
+        </div>
+
+        <div class="route-right">
+            <div class="time">
+                <span>First & Last:</span>
+                <strong>05:30 AM – 09:00 PM</strong>
+            </div>
+
+            <div class="chevron"></div>
+        </div>
+
+    </button>
+
+    <div class="route-details">
+        <p class="description">
+            Traverses Commonwealth Avenue, Fairview Center Mall,
+            SM Fairview, and Quirino Highway into Novaliches.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-box">
+                <span>Headway</span>
+                <strong>Every 12 mins</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Operating Days</span>
+                <strong>Monday to Sunday</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Total Stops</span>
+                <strong>9 Designated Stops</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Fare</span>
+                <strong class="free">Free (Libreng Sakay)</strong>
+            </div>
+
+        </div>
+
+        <h3>Designated Passenger Stops on this Line:</h3>
+        <div class="stops-grid">
+            <div class="stop">
+                <div class="number">1</div>
+                <div>
+                    <strong>QC Hall Gate 3</strong>
+                    <span>Quezon Memorial Circle</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">2</div>
+                <div>
+                    <strong>Philcoa Overpass</strong>
+                    <span>Philcoa Market / UP Entrance</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">3</div>
+                <div>
+                    <strong>University Avenue Footbridge</strong>
+                    <span>UP Diliman Arch</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">4</div>
+                <div>
+                    <strong>Tandang Sora Commonwealth</strong>
+                    <span>Tandang Sora Flyover</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">5</div>
+                <div>
+                    <strong>Don Antonio Sports Complex</strong>
+                    <span>Holy Spirit Drive</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">6</div>
+                <div>
+                    <strong>Batasan San Mateo Rd</strong>
+                    <span>Sandiganbayan</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">7</div>
+                <div>
+                    <strong>Fairview Center Mall (FCM)</strong>
+                    <span>Regalado Avenue</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">8</div>
+                <div>
+                    <strong>SM City Fairview & Fairview Terraces</strong>
+                    <span>Belfast Ave / Quirino Hwy</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">9</div>
+                <div>
+                    <strong>Robinsons Novaliches Terminal</strong>
+                    <span>Novaliches Bayan Gateway</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="route-card" id="routeCard">
+    <button class="route-header" onclick="toggleRoute()">
+        <div class="route-left">
+            <div class="line-badge">
+                Line 3
+            </div>
+
+            <div class="route-title">
+                <h2>Route 1: QC Hall to Robinsons Novaliches</h2>
+                <p>Quezon City Hall (Kalayaán) ⇄ Robinsons Novaliches</p>
+            </div>
+
+        </div>
+
+        <div class="route-right">
+            <div class="time">
+                <span>First & Last:</span>
+                <strong>05:30 AM – 09:00 PM</strong>
+            </div>
+
+            <div class="chevron"></div>
+        </div>
+
+    </button>
+
+    <div class="route-details">
+        <p class="description">
+            Traverses Commonwealth Avenue, Fairview Center Mall,
+            SM Fairview, and Quirino Highway into Novaliches.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-box">
+                <span>Headway</span>
+                <strong>Every 12 mins</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Operating Days</span>
+                <strong>Monday to Sunday</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Total Stops</span>
+                <strong>9 Designated Stops</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Fare</span>
+                <strong class="free">Free (Libreng Sakay)</strong>
+            </div>
+
+        </div>
+
+        <h3>Designated Passenger Stops on this Line:</h3>
+        <div class="stops-grid">
+            <div class="stop">
+                <div class="number">1</div>
+                <div>
+                    <strong>QC Hall Gate 3</strong>
+                    <span>Quezon Memorial Circle</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">2</div>
+                <div>
+                    <strong>Philcoa Overpass</strong>
+                    <span>Philcoa Market / UP Entrance</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">3</div>
+                <div>
+                    <strong>University Avenue Footbridge</strong>
+                    <span>UP Diliman Arch</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">4</div>
+                <div>
+                    <strong>Tandang Sora Commonwealth</strong>
+                    <span>Tandang Sora Flyover</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">5</div>
+                <div>
+                    <strong>Don Antonio Sports Complex</strong>
+                    <span>Holy Spirit Drive</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">6</div>
+                <div>
+                    <strong>Batasan San Mateo Rd</strong>
+                    <span>Sandiganbayan</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">7</div>
+                <div>
+                    <strong>Fairview Center Mall (FCM)</strong>
+                    <span>Regalado Avenue</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">8</div>
+                <div>
+                    <strong>SM City Fairview & Fairview Terraces</strong>
+                    <span>Belfast Ave / Quirino Hwy</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">9</div>
+                <div>
+                    <strong>Robinsons Novaliches Terminal</strong>
+                    <span>Novaliches Bayan Gateway</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="route-card" id="routeCard">
+    <button class="route-header" onclick="toggleRoute()">
+        <div class="route-left">
+            <div class="line-badge">
+                Line 4
+            </div>
+
+            <div class="route-title">
+                <h2>Route 1: QC Hall to Robinsons Novaliches</h2>
+                <p>Quezon City Hall (Kalayaán) ⇄ Robinsons Novaliches</p>
+            </div>
+
+        </div>
+
+        <div class="route-right">
+            <div class="time">
+                <span>First & Last:</span>
+                <strong>05:30 AM – 09:00 PM</strong>
+            </div>
+
+            <div class="chevron"></div>
+        </div>
+
+    </button>
+
+    <div class="route-details">
+        <p class="description">
+            Traverses Commonwealth Avenue, Fairview Center Mall,
+            SM Fairview, and Quirino Highway into Novaliches.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-box">
+                <span>Headway</span>
+                <strong>Every 12 mins</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Operating Days</span>
+                <strong>Monday to Sunday</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Total Stops</span>
+                <strong>9 Designated Stops</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Fare</span>
+                <strong class="free">Free (Libreng Sakay)</strong>
+            </div>
+
+        </div>
+
+        <h3>Designated Passenger Stops on this Line:</h3>
+        <div class="stops-grid">
+            <div class="stop">
+                <div class="number">1</div>
+                <div>
+                    <strong>QC Hall Gate 3</strong>
+                    <span>Quezon Memorial Circle</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">2</div>
+                <div>
+                    <strong>Philcoa Overpass</strong>
+                    <span>Philcoa Market / UP Entrance</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">3</div>
+                <div>
+                    <strong>University Avenue Footbridge</strong>
+                    <span>UP Diliman Arch</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">4</div>
+                <div>
+                    <strong>Tandang Sora Commonwealth</strong>
+                    <span>Tandang Sora Flyover</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">5</div>
+                <div>
+                    <strong>Don Antonio Sports Complex</strong>
+                    <span>Holy Spirit Drive</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">6</div>
+                <div>
+                    <strong>Batasan San Mateo Rd</strong>
+                    <span>Sandiganbayan</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">7</div>
+                <div>
+                    <strong>Fairview Center Mall (FCM)</strong>
+                    <span>Regalado Avenue</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">8</div>
+                <div>
+                    <strong>SM City Fairview & Fairview Terraces</strong>
+                    <span>Belfast Ave / Quirino Hwy</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">9</div>
+                <div>
+                    <strong>Robinsons Novaliches Terminal</strong>
+                    <span>Novaliches Bayan Gateway</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="route-card" id="routeCard">
+    <button class="route-header" onclick="toggleRoute()">
+        <div class="route-left">
+            <div class="line-badge">
+                Line 5
+            </div>
+
+            <div class="route-title">
+                <h2>Route 1: QC Hall to Robinsons Novaliches</h2>
+                <p>Quezon City Hall (Kalayaán) ⇄ Robinsons Novaliches</p>
+            </div>
+
+        </div>
+
+        <div class="route-right">
+            <div class="time">
+                <span>First & Last:</span>
+                <strong>05:30 AM – 09:00 PM</strong>
+            </div>
+
+            <div class="chevron"></div>
+        </div>
+
+    </button>
+
+    <div class="route-details">
+        <p class="description">
+            Traverses Commonwealth Avenue, Fairview Center Mall,
+            SM Fairview, and Quirino Highway into Novaliches.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-box">
+                <span>Headway</span>
+                <strong>Every 12 mins</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Operating Days</span>
+                <strong>Monday to Sunday</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Total Stops</span>
+                <strong>9 Designated Stops</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Fare</span>
+                <strong class="free">Free (Libreng Sakay)</strong>
+            </div>
+
+        </div>
+
+        <h3>Designated Passenger Stops on this Line:</h3>
+        <div class="stops-grid">
+            <div class="stop">
+                <div class="number">1</div>
+                <div>
+                    <strong>QC Hall Gate 3</strong>
+                    <span>Quezon Memorial Circle</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">2</div>
+                <div>
+                    <strong>Philcoa Overpass</strong>
+                    <span>Philcoa Market / UP Entrance</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">3</div>
+                <div>
+                    <strong>University Avenue Footbridge</strong>
+                    <span>UP Diliman Arch</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">4</div>
+                <div>
+                    <strong>Tandang Sora Commonwealth</strong>
+                    <span>Tandang Sora Flyover</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">5</div>
+                <div>
+                    <strong>Don Antonio Sports Complex</strong>
+                    <span>Holy Spirit Drive</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">6</div>
+                <div>
+                    <strong>Batasan San Mateo Rd</strong>
+                    <span>Sandiganbayan</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">7</div>
+                <div>
+                    <strong>Fairview Center Mall (FCM)</strong>
+                    <span>Regalado Avenue</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">8</div>
+                <div>
+                    <strong>SM City Fairview & Fairview Terraces</strong>
+                    <span>Belfast Ave / Quirino Hwy</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">9</div>
+                <div>
+                    <strong>Robinsons Novaliches Terminal</strong>
+                    <span>Novaliches Bayan Gateway</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="route-card" id="routeCard">
+    <button class="route-header" onclick="toggleRoute()">
+        <div class="route-left">
+            <div class="line-badge">
+                Line 6
+            </div>
+
+            <div class="route-title">
+                <h2>Route 1: QC Hall to Robinsons Novaliches</h2>
+                <p>Quezon City Hall (Kalayaán) ⇄ Robinsons Novaliches</p>
+            </div>
+
+        </div>
+
+        <div class="route-right">
+            <div class="time">
+                <span>First & Last:</span>
+                <strong>05:30 AM – 09:00 PM</strong>
+            </div>
+
+            <div class="chevron"></div>
+        </div>
+
+    </button>
+
+    <div class="route-details">
+        <p class="description">
+            Traverses Commonwealth Avenue, Fairview Center Mall,
+            SM Fairview, and Quirino Highway into Novaliches.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-box">
+                <span>Headway</span>
+                <strong>Every 12 mins</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Operating Days</span>
+                <strong>Monday to Sunday</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Total Stops</span>
+                <strong>9 Designated Stops</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Fare</span>
+                <strong class="free">Free (Libreng Sakay)</strong>
+            </div>
+
+        </div>
+
+        <h3>Designated Passenger Stops on this Line:</h3>
+        <div class="stops-grid">
+            <div class="stop">
+                <div class="number">1</div>
+                <div>
+                    <strong>QC Hall Gate 3</strong>
+                    <span>Quezon Memorial Circle</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">2</div>
+                <div>
+                    <strong>Philcoa Overpass</strong>
+                    <span>Philcoa Market / UP Entrance</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">3</div>
+                <div>
+                    <strong>University Avenue Footbridge</strong>
+                    <span>UP Diliman Arch</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">4</div>
+                <div>
+                    <strong>Tandang Sora Commonwealth</strong>
+                    <span>Tandang Sora Flyover</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">5</div>
+                <div>
+                    <strong>Don Antonio Sports Complex</strong>
+                    <span>Holy Spirit Drive</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">6</div>
+                <div>
+                    <strong>Batasan San Mateo Rd</strong>
+                    <span>Sandiganbayan</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">7</div>
+                <div>
+                    <strong>Fairview Center Mall (FCM)</strong>
+                    <span>Regalado Avenue</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">8</div>
+                <div>
+                    <strong>SM City Fairview & Fairview Terraces</strong>
+                    <span>Belfast Ave / Quirino Hwy</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">9</div>
+                <div>
+                    <strong>Robinsons Novaliches Terminal</strong>
+                    <span>Novaliches Bayan Gateway</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="route-card" id="routeCard">
+    <button class="route-header" onclick="toggleRoute()">
+        <div class="route-left">
+            <div class="line-badge">
+                Line 7
+            </div>
+
+            <div class="route-title">
+                <h2>Route 1: QC Hall to Robinsons Novaliches</h2>
+                <p>Quezon City Hall (Kalayaán) ⇄ Robinsons Novaliches</p>
+            </div>
+
+        </div>
+
+        <div class="route-right">
+            <div class="time">
+                <span>First & Last:</span>
+                <strong>05:30 AM – 09:00 PM</strong>
+            </div>
+
+            <div class="chevron"></div>
+        </div>
+
+    </button>
+
+    <div class="route-details">
+        <p class="description">
+            Traverses Commonwealth Avenue, Fairview Center Mall,
+            SM Fairview, and Quirino Highway into Novaliches.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-box">
+                <span>Headway</span>
+                <strong>Every 12 mins</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Operating Days</span>
+                <strong>Monday to Sunday</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Total Stops</span>
+                <strong>9 Designated Stops</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Fare</span>
+                <strong class="free">Free (Libreng Sakay)</strong>
+            </div>
+
+        </div>
+
+        <h3>Designated Passenger Stops on this Line:</h3>
+        <div class="stops-grid">
+            <div class="stop">
+                <div class="number">1</div>
+                <div>
+                    <strong>QC Hall Gate 3</strong>
+                    <span>Quezon Memorial Circle</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">2</div>
+                <div>
+                    <strong>Philcoa Overpass</strong>
+                    <span>Philcoa Market / UP Entrance</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">3</div>
+                <div>
+                    <strong>University Avenue Footbridge</strong>
+                    <span>UP Diliman Arch</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">4</div>
+                <div>
+                    <strong>Tandang Sora Commonwealth</strong>
+                    <span>Tandang Sora Flyover</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">5</div>
+                <div>
+                    <strong>Don Antonio Sports Complex</strong>
+                    <span>Holy Spirit Drive</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">6</div>
+                <div>
+                    <strong>Batasan San Mateo Rd</strong>
+                    <span>Sandiganbayan</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">7</div>
+                <div>
+                    <strong>Fairview Center Mall (FCM)</strong>
+                    <span>Regalado Avenue</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">8</div>
+                <div>
+                    <strong>SM City Fairview & Fairview Terraces</strong>
+                    <span>Belfast Ave / Quirino Hwy</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">9</div>
+                <div>
+                    <strong>Robinsons Novaliches Terminal</strong>
+                    <span>Novaliches Bayan Gateway</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="route-card" id="routeCard">
+    <button class="route-header" onclick="toggleRoute()">
+        <div class="route-left">
+            <div class="line-badge">
+                Line 8
+            </div>
+
+            <div class="route-title">
+                <h2>Route 1: QC Hall to Robinsons Novaliches</h2>
+                <p>Quezon City Hall (Kalayaán) ⇄ Robinsons Novaliches</p>
+            </div>
+
+        </div>
+
+        <div class="route-right">
+            <div class="time">
+                <span>First & Last:</span>
+                <strong>05:30 AM – 09:00 PM</strong>
+            </div>
+
+            <div class="chevron"></div>
+        </div>
+
+    </button>
+
+    <div class="route-details">
+        <p class="description">
+            Traverses Commonwealth Avenue, Fairview Center Mall,
+            SM Fairview, and Quirino Highway into Novaliches.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-box">
+                <span>Headway</span>
+                <strong>Every 12 mins</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Operating Days</span>
+                <strong>Monday to Sunday</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Total Stops</span>
+                <strong>9 Designated Stops</strong>
+            </div>
+
+            <div class="info-box">
+                <span>Fare</span>
+                <strong class="free">Free (Libreng Sakay)</strong>
+            </div>
+
+        </div>
+
+        <h3>Designated Passenger Stops on this Line:</h3>
+        <div class="stops-grid">
+            <div class="stop">
+                <div class="number">1</div>
+                <div>
+                    <strong>QC Hall Gate 3</strong>
+                    <span>Quezon Memorial Circle</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">2</div>
+                <div>
+                    <strong>Philcoa Overpass</strong>
+                    <span>Philcoa Market / UP Entrance</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">3</div>
+                <div>
+                    <strong>University Avenue Footbridge</strong>
+                    <span>UP Diliman Arch</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">4</div>
+                <div>
+                    <strong>Tandang Sora Commonwealth</strong>
+                    <span>Tandang Sora Flyover</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">5</div>
+                <div>
+                    <strong>Don Antonio Sports Complex</strong>
+                    <span>Holy Spirit Drive</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">6</div>
+                <div>
+                    <strong>Batasan San Mateo Rd</strong>
+                    <span>Sandiganbayan</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">7</div>
+                <div>
+                    <strong>Fairview Center Mall (FCM)</strong>
+                    <span>Regalado Avenue</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">8</div>
+                <div>
+                    <strong>SM City Fairview & Fairview Terraces</strong>
+                    <span>Belfast Ave / Quirino Hwy</span>
+                </div>
+            </div>
+
+            <div class="stop">
+                <div class="number">9</div>
+                <div>
+                    <strong>Robinsons Novaliches Terminal</strong>
+                    <span>Novaliches Bayan Gateway</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
